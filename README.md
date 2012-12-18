@@ -17,6 +17,10 @@ This will create barcode with checksum for transfer to account 2600121198/8330 w
 variable symbol 1234, empty constant symbol (every field that is empty or nulls
 is to be filled by used) and amount of 5.00 euros (the last argument is in cents).
 
+If you want to convert the .eps to pdf, use this command:
+
+ps2pdf -dEPSCrop thecode.eps thecode.pdf
+
 Setup
 -----
 
@@ -26,9 +30,6 @@ Setup
 TODO
 ----
 
-TODO: 
-
-- Size and printing of numbers too should be parametrized in the class, for now change it in command line
 - More testing
 
 Copying

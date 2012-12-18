@@ -19,9 +19,10 @@ def barcode(accountno, bankno, vs, ks, cents)
 	full_string+bar_checksum(full_string).to_s
 end
 
-def save_as_eps(code, filepath)
+# for iphone screen use 70x35
+def save_as_eps(code, filepath, dimensions="110x12")
 	if /^[0-9]{50}$/.match(code)
-		system("#{@path_to_barcode} -o #{Shellwords.escape(filepath)} -b #{Shellwords.escape(code)} -u mm -g 110x12 -n -e code128c -E")
+		system("#{@path_to_barcode} -o #{Shellwords.escape(filepath)} -b #{Shellwords.escape(code)} -u mm -g #{Shellwords.escape(dimensions)} -n -e code128c -E")
 	else
 		false
 	end
