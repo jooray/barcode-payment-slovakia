@@ -39,7 +39,7 @@ Author: Juraj Bednar, see COPYING for license (simplified BSD license)
 
 Pull requests welcome, please contribute! 
 
-Bitcoin donations welcome at 1Mf3oRgERXnFufZqDLRSLH81DfmPzSsbVr
+Bitcoin donations welcome at 1MdYE2NZ7DpeVw2un2an27nohyWKctyaBb
 
 Please donate if this saves you time.
 
